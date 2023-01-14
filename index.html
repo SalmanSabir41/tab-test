@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Open Sans',sans-serif;
+   
+}
+ul.menu-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+    font-weight: bolder;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+ul {
+    display: flex;
+    column-gap: 30px;
+}
+.nav {
+    height: 70px;
+    background-color: rgb(24, 41, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-1 {
+  
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 30px;
+}
+.tab-2 {
+   
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 30px;
+}
+.tab-3 {
+   
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 30px;
+}
+.tab-4 {
+    
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 30px;
+}
+p.last-p {
+    font-style: oblique;
+    font-family: monospace;
+}
+
+img {
+    width: 100%;
+}
+h1 {
+    color: cornflowerblue;
+    text-align: center;
+    margin-bottom: 30px;
+}
+p.top-p {
+    font-style: italic;
+}
+p.last-p {
+    font-style: revert;
+    font-family: cursive;
+    margin: 10px 0 20px;
+    font-size: 11px;
+    color: #6f4cfb;
+}
+        
+    </style>
+</head>
+<body>
+
+    <section class="nav-logo">
+        <div class="container">
+            <div class="nav" id="fixedNav">
+
+                <div class="menu">
+                    <ul class="menu-ul">
+                        <li class="home-light">
+                            <a onclick="boxChanges('tab1','buttonn1')" id="buttonn1">BOX-1</a>
+                        </li>
+                        <li>
+                            <a onclick="boxChanges('tab2','buttonn2')" id="buttonn2">BOX-2</a>
+                        </li>
+                        <li>
+                            <a onclick="boxChanges('tab3','buttonn3')" id="buttonn3">BOX-3</a>
+                        </li>
+                        <li>
+                            <a onclick="boxChanges('tab4','buttonn4')" id="buttonn4">BOX-4</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tab1 active" id="tab1">
+        <h1>BOX-1</h1>
+        
+        <div class="pic">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt="#">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fugiat similique sed. Nemo natus eveniet deleniti enim, doloremque laboriosam nesciunt vitae illum blanditiis ducimus, iste excepturi, nobis voluptates consequatur! Repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere modi sint, totam et saepe iste cupiditate molestiae eius consequatur consectetur molestias expedita, nemo quod consequuntur. Nihil quis aspernatur voluptates.</p>
+        
+    </section>
+
+    <section class="tab2 active" id="tab2">
+        <h1>BOX-2</h1>
+        
+        <div class="pic">
+            <img src="https://dubaiofw.com/wp-content/uploads/2016/04/marvel-img-worlds-of-adventure-dubai.jpg" alt="#">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fugiat similique sed. Nemo natus eveniet deleniti enim, doloremque laboriosam nesciunt vitae illum blanditiis ducimus, iste excepturi, nobis voluptates consequatur! Repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere modi sint, totam et saepe iste cupiditate molestiae eius consequatur consectetur molestias expedita, nemo quod consequuntur. Nihil quis aspernatur voluptates.</p>
+        
+    </section>
+
+    <section class="tab3 active" id="tab3">
+        <h1>BOX-3</h1>
+        
+        <div class="pic">
+            <img src="https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?b=1&s=170667a&w=0&k=20&c=AAVVOvN9uY1Rd_0QsWb8WvBN-4VSUdCORiZx51s5OLc=" alt="#">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fugiat similique sed. Nemo natus eveniet deleniti enim, doloremque laboriosam nesciunt vitae illum blanditiis ducimus, iste excepturi, nobis voluptates consequatur! Repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere modi sint, totam et saepe iste cupiditate molestiae eius consequatur consectetur molestias expedita, nemo quod consequuntur. Nihil quis aspernatur voluptates.</p>
+        
+    </section>
+
+    <section class="tab4 active" id="tab4">
+        <h1>BOX-4</h1>
+        
+        <div class="pic">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt="#">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fugiat similique sed. Nemo natus eveniet deleniti enim, doloremque laboriosam nesciunt vitae illum blanditiis ducimus, iste excepturi, nobis voluptates consequatur! Repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere modi sint, totam et saepe iste cupiditate molestiae eius consequatur consectetur molestias expedita, nemo quod consequuntur. Nihil quis aspernatur voluptates.</p>
+        
+    </section>
+
+
+
+
+    <script>
+        boxChanges('tab1','buttonn1')
+       function boxChanges(tabNames,activecolors) {
+
+           document.getElementById('tab1').style.display = 'none'
+           document.getElementById('tab2').style.display = 'none'
+           document.getElementById('tab3').style.display = 'none'
+           document.getElementById('tab4').style.display = 'none'
+           document.getElementById(tabNames).style.display = 'block'
+
+
+           document.getElementById('buttonn1').style.color ='white'
+           document.getElementById('buttonn2').style.color ='white'
+           document.getElementById('buttonn3').style.color ='white'
+           document.getElementById('buttonn4').style.color ='white'
+
+           document.getElementById(activecolors).style.color ='blue'
+
+       }
+   </script>
+    
+</body>
+</html>
